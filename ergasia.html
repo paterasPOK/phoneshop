@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="ergasia.css" type="text/css" />
+    <title>Configure Your Phone Model</title>
+  </head>
+
+  <body>
+    <h2>Configure Your Phone Model</h2>
+
+    <form>
+      <fieldset id="config">
+        <legend>Configuration</legend>
+
+        <input type="radio" id="pocox3" value="150" name="configuration" price=
+        >
+        <label for="pocox3">Poco x3 $150.00</label><br />
+
+        <input type="radio" id="pocox3nfc" value="170" name="configuration" />
+        <label for="pocox3nfc">Poco x3 NFC $170.00</label><br />
+
+        <input type="radio" id="pocox3pro" value="200" name="configuration" />
+        <label for="pocox3pro">Poco x3 Pro $200.00</label><br />
+
+        <input
+          type="radio"
+          id="pocox3pronfc"
+          value="250"
+          name="configuration"
+        />
+        <label for="pocox3pronfc">Poco x3 Pro NFC $250.00</label><br />
+      </fieldset>
+
+      <fieldset id="ram">
+        <legend>RAM</legend>
+
+        <input type="radio" id="ram1" value="0" name="ram" />
+        <label for="ram1">RAM 4GB $0</label><br />
+
+        <input type="radio" id="ram2" value="30" name="ram" />
+        <label for="ram2">RAM 6GB $30</label><br />
+
+        <input type="radio" id="ram3" value="60" name="ram" />
+        <label for="ram3">RAM 8GB $60</label><br />
+      </fieldset>
+
+      <fieldset id="battery">
+        <legend>Battery</legend>
+
+        <input type="radio" id="battery1" value="20" name="battery" />
+        <label for="battery1">Battery Capacity:5160mAh $20</label><br />
+
+        <input type="radio" id="battery2" value="35" name="battery" />
+        <label for="battery2">Battery Capacity:6000mAh $35</label><br />
+      </fieldset>
+
+      <fieldset id="extras">
+        <legend>Extras</legend>
+
+        <input type="checkbox" id="case" value="5" name="extras" />
+        <label for="case">Case $5</label><br />
+
+        <input type="checkbox" id="tmpglass" value="9" name="extras" />
+        <label for="tmpglass">Tempered Glass $9</label><br />
+      </fieldset>
+
+      <fieldset id="color">
+        <legend>Choose Color</legend>
+
+        <select onchange="document.getElementById('preview').src = this.value">
+          <option value="blue.png">Blue</option>
+          <option value="black.png">Black</option>
+          <option value="bronze.png">Bronze</option>
+        </select>
+        <img id="preview" />
+      </fieldset>
+
+      <fieldset id="calc">
+        <legend>Total Price</legend>
+
+        <input type="textarea" id="txt" name="calc" value="" readonly />
+
+        <input
+          type="button"
+          id="btn"
+          value="Calculate"
+          name="calc"
+          onclick="calculation()"
+        />
+      </fieldset>
+    </form>
+    <script type="text/javascript" src="ergasia.js"></script>
+  </body>
+</html>

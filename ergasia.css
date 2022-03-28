@@ -1,0 +1,40 @@
+html {
+  background-color: rgb(149, 224, 224);
+}
+
+#config,
+#ram,
+#battery,
+#extras,
+#color,
+#calc {
+  border-radius: 15px;
+}
+
+@media (min-resolution: 300dpi) {
+  fieldset {
+    background-color: #ccc;
+    max-width: min-resolution;
+    padding: 16px;
+    border: 2px solid black;
+  }
+  legend {
+    background-color: #000;
+    color: #fff;
+    padding: 1px 2px;
+  }
+}
+
+@media (max-resolution: 500dpi) {
+  fieldset {
+    background-color: #ccc;
+    max-width: max-resolution;
+    padding: 16px;
+    border: 2px solid black;
+  }
+  legend {
+    background-color: #000;
+    color: #fff;
+    padding: 1px 2px;
+  }
+}
